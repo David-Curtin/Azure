@@ -59,7 +59,7 @@ jobs:
       - uses: azure/docker-login@v1
         with:
           login-server: ${{env.IMAGE_REGISTRY_URL}}
-          username: ${{github.actor }}
+          username: david-curtin
           password: ${{secrets.GITHUB_TOKEN}}
           
       - name: Deploy web app container
