@@ -6,7 +6,6 @@ env:
   AZURE_WEBAPP_NAME: david-ttt-app
   
 on:
-  workflow_dispatch:
   pull_request:
     types: [labeled]
     
