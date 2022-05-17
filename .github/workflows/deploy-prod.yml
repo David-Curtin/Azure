@@ -1,9 +1,9 @@
-name: Staging the app
+name: Deploy to Production
 
 env:
-  DOCKER_IMAGE_NAME: david-azure-ttt
+  DOCKER_IMAGE_NAME: david-azure-ttt2
   IMAGE_REGISTRY_URL: docker.pkg.github.com
-  AZURE_WEBAPP_NAME: david-ttt-app
+  AZURE_WEBAPP_NAME: david-ttt-app2
   
 on:
   push:
