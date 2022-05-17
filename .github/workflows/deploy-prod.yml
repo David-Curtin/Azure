@@ -1,9 +1,9 @@
 name: Deploy to Production
 
 env:
-  DOCKER_IMAGE_NAME: david-azure-ttt2
+  DOCKER_IMAGE_NAME: david-azure-ttt
   IMAGE_REGISTRY_URL: docker.pkg.github.com
-  AZURE_WEBAPP_NAME: david-ttt-app2
+  AZURE_WEBAPP_NAME: david-ttt-app
   
 on:
   push:
@@ -12,7 +12,6 @@ on:
     
 jobs:
   build:
-    if: contains(github.event.pull_request.labels.*.name, 'stage')
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
