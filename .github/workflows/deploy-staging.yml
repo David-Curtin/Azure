@@ -1,4 +1,4 @@
-name: Staging the app
+name: Stage the app
 
 env:
   DOCKER_IMAGE_NAME: david-azure-ttt
